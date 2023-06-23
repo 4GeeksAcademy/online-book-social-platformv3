@@ -1,0 +1,58 @@
+.carousel-item {
+    width: 100%; 
+    height: 460px; 
+    object-fit: cover; 
+  }
+
+  .carousel-caption::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -195px;
+    width: 145%;
+    height: 120%;
+    background-color: rgba(48, 48, 48, 0.8);
+    z-index: 0; 
+  }
+
+  .carousel-caption h5,
+  .carousel-caption p {
+    color: white;
+    position: relative;
+    z-index: 1; 
+  }
+
+  .carousel-with-border {
+    border: 1px solid black;
+  }
+
+.carousel-control-next-icon {
+ position: absolute;
+ left: 162px;
+}
+
+.carousel-control-prev-icon {
+  position: absolute;
+  left: 0px;
+}
+
+.card-img-top {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-text {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background-color: #9f9d81;
+  border-color: #9f9d81;
+}
+
+
+.card-img-top {
+  align-self: center;
+}

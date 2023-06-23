@@ -1,0 +1,27 @@
+.UserPost {
+    width: 30%; 
+    background-color: #FBCFAA;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.modal-btn {
+    margin: 10px;
+}
+
+.search {
+    margin-right: 10px;
+}
+
+.DiscussionsBottom {
+    margin-left: 20%;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #F38F42;
+    border-radius: 10px;
+}
+
+.DisIcon {
+    margin-right: 100px;
+    margin-top: 10px;
+}
