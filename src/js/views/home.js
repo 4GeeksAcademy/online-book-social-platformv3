@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/homepage.css";
+import "../../styles/home.css";
 import { Card, CardGroup, Button } from "react-bootstrap";
 
 export const Home = () => (
