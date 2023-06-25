@@ -19,6 +19,7 @@ div.card-fave-quote {
     margin-top: 30px;
     background-color: #3F4C69;
     color: #DBD3CA;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 p.fave-genres {
@@ -61,3 +62,16 @@ h5.card-title {
     size: 100%;
 }
 
+
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    padding-left: 400px;
+    
+  }
+
+  .list-group-item {
+    background-color: #796D62;
+    color: #DBD3CA;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
