@@ -1,0 +1,74 @@
+body {
+  background-color: #dbd3ca;
+}
+
+img.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 150px;
+  border-radius: 50%;
+}
+
+p.center {
+  text-align: center;
+}
+
+div.card-fave-quote {
+  margin-top: 30px;
+  background-color: #3f4c69;
+  color: #dbd3ca;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+p.fave-genres {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  color: #3f4c69;
+}
+
+p.book-collection {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  color: #3f4c69;
+}
+
+p.alltime-fave {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  color: #3f4c69;
+}
+
+div.fave-alltime {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #796d62;
+  color: #dbd3ca;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  object-fit: contain;
+}
+
+h5.card-title {
+  size: 100%;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  padding-left: 400px;
+}
+
+.list-group-item {
+  background-color: #796d62;
+  color: #dbd3ca;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
