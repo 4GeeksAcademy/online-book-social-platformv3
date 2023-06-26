@@ -89,12 +89,12 @@ export const MyProfile = () => {
               Biography
             </a>
           </div>
-          <p class="book-collection">
+          <p class="book-collection row">
             These are a few books that are a part of my collection...
           </p>
           <div
             id="carouselExampleSlidesOnly"
-            class="carousel-slide"
+            class="carousel-slide column"
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
