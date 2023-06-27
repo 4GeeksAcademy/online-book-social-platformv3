@@ -56,3 +56,24 @@
 .card-img-top {
   align-self: center;
 }
+
+body {
+  background-color: #dbd3ca;
+}
+
+.book-image {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+}
+
+
+.featured-books .card {
+  background-color: #dbd3ca; /* Set the background color */
+  color: #000000; /* Set the text color */
+  border: 1px solid #000000; /* Add a border */
+}
+
+.table-bordered {
+  border: 1px solid #000000; /* Set the border color and width */
+}

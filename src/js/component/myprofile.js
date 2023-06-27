@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Home from "../views/home";
+import "../../styles/myprofile.css";
 
 export const MyProfile = () => {
   return (
