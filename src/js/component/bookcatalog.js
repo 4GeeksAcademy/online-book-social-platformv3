@@ -10,11 +10,20 @@ import axios from "axios";
 export const BookCatalog = () => {
   const [search, setSearch]=useState("");
   const searchBook = (evt) => {
-    if (evt.key==="Enter")
-    {
-      console.log('hello')
+    if (evt.key === "Enter") {
+      axios
+        .get(
+          'https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyDE-JV38ESCgNT7Prio8JsZ1S6tGK40qWo'
+        )
+        .then((response) => {
+          const books = response.data.items;
+          console.log(books);
+        })
+        .catch((error) => {
+          console.error('Error fetching search results:', error);
+        });
     }
-  }
+  };
   return (
     <div className="book-catalog-container">
       <Carousel>
