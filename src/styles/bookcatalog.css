@@ -28,4 +28,20 @@ h2{
     margin-top: 10px; /* Adjust the margin as needed */
   }
   
+  .search input {
+    outline: 0;
+    border: 0;
+    width: 350px;
+    height:35px;
+    padding: 0 0.5rem;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .search button {
+    outline: none;
+    border:none;
+    height:35px;
+    padding: 0 0.5rem;
+  }
   
