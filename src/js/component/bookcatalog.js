@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Card from "./catalog-cards.js";
+import CardGroup from "./bookcatalogcargroup.js";
 import axios from "axios";
 
 
@@ -44,13 +45,17 @@ export const BookCatalog = () => {
       <div className="search-wrapper">
         <h2 className="heading">Discover Your Next Book</h2>
         <div className="search">
-          <input type="text" placeholder="Enter Book Name" value={search} onChange={e=>setSearch(e.target.value)}
-          onKeyPress={searchBook}/>
+          <input type="text" placeholder="Enter Book Name" value={search} onChange={e => setSearch(e.target.value)}
+            onKeyPress={searchBook} />
           <button><FontAwesomeIcon icon={faSearch} /></button>
         </div>
       </div>
       <div className="card-container">
-        <Card book={bookData}/>
+        <CardGroup book={bookData} />
+      </div>
+      <div className="trending">
+        <h2>Top 3 Books in the U.S Today</h2>
+        <Card />
       </div>
     </div>
   );

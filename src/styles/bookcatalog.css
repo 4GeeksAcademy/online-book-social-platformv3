@@ -38,6 +38,7 @@
   }
   
   .card-container {
+    max-width: 540px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
