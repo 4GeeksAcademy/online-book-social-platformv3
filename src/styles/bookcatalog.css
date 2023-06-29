@@ -1,12 +1,8 @@
-h2{
-    color:rgb(130, 97, 97);
-}
 .book-catalog-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh; /* Adjust the height as needed */
+    padding-top: 50px; /* Adjust the padding as needed */
   }
   
   .search-wrapper {
@@ -15,10 +11,6 @@ h2{
     align-items: center;
     justify-content: center;
     margin-top: 20px; /* Adjust the margin as needed */
-  }
-  
-  .heading {
-    text-align: center;
   }
   
   .search {
@@ -32,7 +24,7 @@ h2{
     outline: 0;
     border: 0;
     width: 350px;
-    height:35px;
+    height: 35px;
     padding: 0 0.5rem;
     font-size: 15px;
     font-weight: bold;
@@ -40,8 +32,19 @@ h2{
   
   .search button {
     outline: none;
-    border:none;
-    height:35px;
+    border: none;
+    height: 35px;
     padding: 0 0.5rem;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+
+  h2{
+    color:#5b4e42;
   }
   

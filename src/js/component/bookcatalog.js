@@ -3,6 +3,8 @@ import "../../styles/bookcatalog.css";
 import Carousel from 'react-bootstrap/Carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import Card from "./catalog-cards.js";
+
 export const BookCatalog = () => {
   return (
     <div className="book-catalog-container">
@@ -34,6 +36,13 @@ export const BookCatalog = () => {
           <input type="text" placeholder="Enter Book Name" />
           <button><FontAwesomeIcon icon={faSearch} /></button>
         </div>
+      </div>
+      <div className="card-container">
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
       </div>
     </div>
   );
