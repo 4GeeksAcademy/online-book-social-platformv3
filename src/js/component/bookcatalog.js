@@ -1,10 +1,11 @@
 import React from 'react';
 import "../../styles/bookcatalog.css";
 import Carousel from 'react-bootstrap/Carousel';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 export const BookCatalog = () => {
   return (
-    <div>
+    <div className="book-catalog-container">
       <Carousel>
         <Carousel.Item>
           <img
@@ -27,9 +28,12 @@ export const BookCatalog = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <div>
-        {/* search bar JSX code here */}
-        
+      <div className="search-wrapper">
+        <h2 className="heading">Discover Your Next Book</h2>
+        <div className="search">
+          <input type="text" placeholder="Enter Book Name" />
+          <button><FontAwesomeIcon icon={faSearch} /></button>
+        </div>
       </div>
     </div>
   );
