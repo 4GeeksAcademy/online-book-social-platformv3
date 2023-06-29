@@ -1,11 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../../styles/bookcatalog.css";
 import Carousel from 'react-bootstrap/Carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Card from "./catalog-cards.js";
+import axios from "axios";
+
 
 export const BookCatalog = () => {
+  const [search, setSearch]=useState("");
+  const searchBook = (evt) => {
+    if (evt.key==="Enter")
+    {
+      console.log('hello')
+    }
+  }
   return (
     <div className="book-catalog-container">
       <Carousel>
@@ -33,7 +42,8 @@ export const BookCatalog = () => {
       <div className="search-wrapper">
         <h2 className="heading">Discover Your Next Book</h2>
         <div className="search">
-          <input type="text" placeholder="Enter Book Name" />
+          <input type="text" placeholder="Enter Book Name" value={search} onChange={e=>setSearch(e.target.value)}
+          onKeyPress={searchBook}/>
           <button><FontAwesomeIcon icon={faSearch} /></button>
         </div>
       </div>
