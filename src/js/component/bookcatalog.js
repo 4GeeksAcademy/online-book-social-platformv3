@@ -9,19 +9,12 @@ import axios from "axios";
 
 export const BookCatalog = () => {
   const [search, setSearch]=useState("");
+  const [bookData, setData]=useState([]);
   const searchBook = (evt) => {
     if (evt.key === "Enter") {
-      axios
-        .get(
-          'https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyDE-JV38ESCgNT7Prio8JsZ1S6tGK40qWo'
-        )
-        .then((response) => {
-          const books = response.data.items;
-          console.log(books);
-        })
-        .catch((error) => {
-          console.error('Error fetching search results:', error);
-        });
+      axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyDE-JV38ESCgNT7Prio8JsZ1S6tGK40qWo`)
+      .then(res=>setData(res.data.items))
+      .catch(err=>console.log(err))
     }
   };
   return (
@@ -57,11 +50,7 @@ export const BookCatalog = () => {
         </div>
       </div>
       <div className="card-container">
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+        <Card book={bookData}/>
       </div>
     </div>
   );
