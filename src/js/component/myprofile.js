@@ -19,6 +19,8 @@ export const MyProfile = () => {
             alt="..."
           />
           <p class="alltime-fave">My All Time Favorite Book is....</p> */}
+          <div class="row">
+            <div class="col-6">
           <div class="container mt-4 mb-4 p-3 d-flex justify-content-center"> 
           <div class="card p-4"> 
           <div class=" image d-flex flex-column justify-content-center align-items-center"> 
@@ -34,11 +36,14 @@ export const MyProfile = () => {
            <div class=" d-flex mt-2"> <button class="btn1 btn-dark">Edit Profile</button> 
            </div> 
            <div class="text mt-3"> 
-           <span>Eleanor Pena is a creator of minimalistic x bold graphics and digital artwork.<br></br> Artist/ Creative Director by Day #NFT minting@ with FND night.</span> 
+           <span>Eleanor Pena <br></br> Artist/ Creative Director by Day #NFT minting@ with FND night.
+           <br></br>I've read over <em>number of books</em> books.
+           </span> 
+          
            </div> 
            <div class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center"> 
-           <span><i class="fa fa-twitter"></i></span>
-           <span><i class="fa-brands fa-facebook fa-bounce"></i></span> 
+           <span><i class="fa-brands fa-square-twitter"></i></span>
+           <span><i class="fa-sharp fa-light fa-face-smile"></i></span> 
            <span><i class="fa fa-instagram"></i></span> 
            <span><i class="fa fa-linkedin"></i></span> 
            </div> 
@@ -49,7 +54,10 @@ export const MyProfile = () => {
             </div>
             
 </div>
-
+</div>
+</div>
+          <div class="row">
+          <div class="col-6">
           <div
             className="card mb-3"
             style={{ maxWidth: "540px" }}
@@ -84,6 +92,10 @@ export const MyProfile = () => {
               </div>
             </div>
           </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
           <p class="fave-genres">
             These are my favorite book genres and favorite book to match...
           </p>
@@ -119,6 +131,8 @@ export const MyProfile = () => {
             >
               Biography
             </a>
+          </div>
+          </div>
           </div>
           <p class="book-collection row">
             These are a few books that are a part of my collection...
@@ -171,6 +185,7 @@ export const MyProfile = () => {
             </div>
           </div>
         </div>
+        
  
   );
 };
