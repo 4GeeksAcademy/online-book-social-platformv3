@@ -1,51 +1,116 @@
 .book-catalog-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px; /* Adjust the padding as needed */
-  }
-  
-  .search-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px; /* Adjust the margin as needed */
-  }
-  
-  .search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px; /* Adjust the margin as needed */
-  }
-  
-  .search input {
-    outline: 0;
-    border: 0;
-    width: 350px;
-    height: 35px;
-    padding: 0 0.5rem;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  .search button {
-    outline: none;
-    border: none;
-    height: 35px;
-    padding: 0 0.5rem;
-  }
-  
-  .card-container {
-    max-width: 540px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px; /* Adjust the margin as needed */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px; 
+}
 
-  h2{
-    color:#5b4e42;
-  }
-  
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.card-container2 {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.card-group2 {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: max-content;
+}
+
+.card2 {
+  width: 300px;
+}
+
+.thumbnailpic {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.card-body2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-title2 {
+  margin-bottom: 10px;
+}
+
+.card-text2 {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.expand-btn {
+  align-self: flex-end;
+}
+
+.card-holder {
+  background-color: #d0c8c0;
+  border: none; 
+  border-radius: 0; 
+}
+
+.card {
+  border: 1px solid black; 
+  border-radius: 4px; 
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; 
+}
+
+.search input {
+  outline: 0;
+  border: 0;
+  width: 350px;
+  height: 35px;
+  padding: 0 0.5rem;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.search button {
+  outline: none;
+  border: none;
+  height: 35px;
+  padding: 0 0.5rem;
+}
+
+.card-container {
+  max-width: 540px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px; 
+}
+
+h2 {
+  color: #5b4e42;
+}
