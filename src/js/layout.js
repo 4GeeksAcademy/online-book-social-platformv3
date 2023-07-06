@@ -13,6 +13,7 @@ import { BookDiscussions } from "./component/bookdiscussions";
 import { MyProfile } from "./component/myprofile";
 import { SignIn } from "./component/signin";
 import { CreateAccount } from "./component/createaccount";
+import { SignUp } from "./component/signup";
 
 //create your first component
 const Layout = () => {
@@ -31,7 +32,7 @@ const Layout = () => {
             <Route path="/discussions" element={<BookDiscussions />} />
             <Route path="/myprofile" element={<MyProfile />} />
             <Route path="/signin" element={<SignIn />} />
-            <Route path="/createaccount" element={<CreateAccount />} />
+            <Route path="/createaccount" element={<SignUp />} />
             <Route path="*" element={<h1>Not found!</h1>} />
           </Routes>
           <Footer />

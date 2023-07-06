@@ -1,7 +1,10 @@
 import React from 'react';
 import Modal from '../component/modal';
+import { useContext } from 'react'; 
+import { Context } from "../store/appContext";
 
 export const BookDiscussions = () => {
+  const{store, actions} = useContext(Context)
   return (
     <div className="DiscussionContainer justify-content-center d-flex flex-column mx-auto w-100">
       <div className="DiscussionsTop justify-content-center d-flex">
@@ -19,69 +22,16 @@ export const BookDiscussions = () => {
       </div>
       <div className="DiscussionsBottom w-75 d-flex justify-content-center">
         <div className="d-flex flex-wrap">
-          <div className="UserPost">
-            <img src="https://i.imgur.com/pSbtAu2.png" />
-            <p>"Post Title"
-            </p>
-
-          </div>
-
-          <div className="UserPost">
-            <img src="..." />
-            <p>"Post Title"
-            </p>
-
-          </div>
-
-          <div className="UserPost">
-            <img src="..." />
-            <p>"Post Title"
-            </p>
-
-          </div>
-
-          <div className="UserPost">
-            <img src="..." />
-            <p>"Post Title"
-            </p>
-
-          </div>
-
-          <div className="UserPost">
-            <img src="..." />
-            <p>"Post Title"
-            </p>
-
-          </div>
-
-          <div className="UserPost">
-            <img src="..." />
-            <p>"Post Title"
-            </p>
-
-          </div>
-
-          <div className="UserPost">
-            <img src="..." />
-            <p>"Post Title"
-            </p>
-
-          </div>
-
-          <div className="UserPost">
-            <img src="..." />
-            <p>"Post Title"
-            </p>
-
-          </div>
-
-          <div className="UserPost">
-            <img src="..." />
-            <p>"Post Title"
-            </p>
-
-          </div>
-
+          {store.dummydata.map((discussion, index) => {
+            let user=store.users.filter((user) => user.id == discussion.UserID)
+            console.log(user)
+            return(
+              <div className="UserPost" key={index}>
+               <img src={user[0].profileImage}/>
+               <p>{discussion.Title}</p>
+              </div>
+            )
+          })}
         </div>
 
       </div>
